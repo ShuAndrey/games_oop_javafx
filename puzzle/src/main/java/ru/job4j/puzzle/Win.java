@@ -4,7 +4,9 @@ public class Win {
     public static boolean check(int[][] board) {
         boolean result = false;
         for (int index = 0; index < board.length; index++) {
-            if ((board[index][index] != 0) && (monoHorizontal(board, index) || monoVertical(board, index))) {
+            if ((board[index][index] != 0)
+                    && (monoHorizontal(board, index)
+                    || monoVertical(board, index))) {
                 result = true;
                 break;
             }
